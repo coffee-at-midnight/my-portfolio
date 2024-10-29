@@ -3,39 +3,22 @@ import { formatDate, getBlogPosts } from "app/lib/posts";
 
 export const metadata = {
   title: "Blog",
-  description: "Nextfolio Blog",
+  description: "The blog of a technical writer. Read here my latest rants about reStructuredText and flawed documentation repositories.",
 };
 
 export default function BlogPosts() {
   let allBlogs = getBlogPosts();
-
   return (
     <section>
-      <h1 className="mb-8 text-2xl font-medium tracking-tight">Our Blog</h1>
+      <h1 className="mb-8 text-2xl font-medium tracking-tight">My Blog</h1>
+      <p className="mb-6">Read here my latest rants from the realms of technical writing.</p>
+      <hr className="mb-8"/>
       <div>
-        {allBlogs
-          .sort((a, b) => {
-            if (
-              new Date(a.metadata.publishedAt) >
-              new Date(b.metadata.publishedAt)
-            ) {
-              return -1;
-            }
-            return 1;
-          })
-          .map((post) => (
-            <Link
-              key={post.slug}
-              className="flex flex-col space-y-1 mb-4 transition-opacity duration-200 hover:opacity-80"
-              href={`/blog/${post.slug}`}
-            >
+        {allBlogs.sort((a, b) => {if (new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)) {return -1;} return 1;}).map((post) => (
+            <Link key={post.slug} className="flex flex-col space-y-1 mb-4 transition-opacity duration-200 hover:opacity-80" href={`/blog/${post.slug}`}>
               <div className="w-full flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-1 sm:space-y-0 sm:space-x-2">
-                <p className="text-black dark:text-white tracking-tight">
-                  {post.metadata.title}
-                </p>
-                <p className="text-neutral-600 dark:text-neutral-400 tabular-nums text-sm">
-                  {formatDate(post.metadata.publishedAt, false)}
-                </p>
+                <p className="text-black dark:text-white tracking-tight underline">{post.metadata.title}</p>
+                <p className="text-neutral-600 dark:text-neutral-400 tabular-nums text-sm">{formatDate(post.metadata.publishedAt, false)}</p>
               </div>
             </Link>
           ))}
