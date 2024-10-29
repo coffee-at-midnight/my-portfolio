@@ -1,16 +1,25 @@
+// Site title and description
 export const metaData = {
   baseUrl: "https://nextfolio-template.vercel.app/",
-  title: "Nextfolio",
-  name: "Sirius",
+  title: "Technical Writer's Portfolio",
+  name: "Jana",
   ogImage: "/opengraph-image.png",
   description:
-    "A clean, fast, and lightweight portfolio template built with Next.js, Vercel, and Tailwind CSS for optimal performance.",
+    "The portfolio of a technical writer.",
 };
 
+// Top level navigation items
+export const navItems = {
+  "/blog": { name: "Blog" },
+  "/about": { name: "About" },
+  "/projects": { name: "Projects" },
+};
+
+// Social link for social media navigation
 export const socialLinks = {
-  twitter: "https://x.com/1tssirius",
-  github: "https://github.com/1msirius/Nextfolio",
-  instagram: "https://www.instagram.com/",
-  linkedin: "https://www.linkedin.com/",
-  email: "mailto:example@gmail.com",
+  twitter: "#",
+  github: "#",
+  instagram: "#",
+  linkedin: "#",
+  email: "#",
 };

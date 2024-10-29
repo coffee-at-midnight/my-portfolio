@@ -1,67 +1,20 @@
 import Image from "next/image";
-import { socialLinks } from "./config";
 
 export default function Page() {
   return (
     <section>
-      <a href={socialLinks.twitter} target="_blank">
-        <Image
-          src="/profile.png"
-          alt="Profile photo"
+      <Image src="/profile.png" alt="Profile photo"
           className="rounded-full bg-gray-100 block lg:mt-5 mt-0 lg:mb-5 mb-10 mx-auto sm:float-right sm:ml-5 sm:mb-5 grayscale hover:grayscale-0"
-          unoptimized
-          width={160}
-          height={160}
-          priority
-        />
-      </a>
-
+          unoptimized width={160} height={160} priority />
       <h1 className="mb-8 text-2xl font-medium tracking-tight">
-        Portfolio, made simple!
+        Hi, I'm Jana, a technical writer!
       </h1>
-
       <div className="prose prose-neutral dark:prose-invert">
-        <p>
-          A clean, fast, and lightweight portfolio template built with Next.js,
-          Vercel, and Tailwind CSS for optimal performance.
-        </p>
-        <p>
-          Nextfolio includes all the essentials for a stunning portfolio: SEO,
-          MDX support, RSS, Atom, & JSON feeds, analytics, tweet & YouTube
-          embeds, KaTeX integration, and{" "}
-          <a
-            target="_blank"
-            href="https://github.com/1msirius/Nextfolio?tab=readme-ov-file#features"
-          >
-            more
-          </a>
-          .
-        </p>
-        <p>
-          Nextfolio is{" "}
-          <a href={socialLinks.github} target="_blank">
-            open-source
-          </a>{" "}
-          and fully customizable, making it easy to add more features.
-        </p>
-        <p>
-          <a
-            href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F1msirius%2FNextfolio"
-            target="_blank"
-          >
-            Deploy
-          </a>{" "}
-          your Nextfolio site with Vercel in minutes and follow the set up
-          instructions in the{" "}
-          <a href="/blog/getting-started">Getting Started</a> post.
-        </p>
-        <p>
-          Built and maintained by{" "}
-          <a href="https://imsirius.xyz/" target="_blank">
-            Sirius
-          </a>
-          .
-        </p>
+        <p>I am a <strong>technical writer in the robotics/automation industry</strong> with previous experience working on contract for a data science start-up company.</p>
+        <p>I'm proficient in creating the technical documentation in <strong>lightweight markup languages</strong> like Markdown and reStructuredText (reST), but I can also utilize <strong>DITA principles</strong> to build a solid information architecture.</p>
+        <p>I can write the documentation in English (US or UK/NZ/AUS) or in German.</p>
+        <p>Additional skills include designing technical diagrams, wireframing and prototyping in Figma, creating or maintaining a style guide, handling translation workflows, as well as writing the release notes and correcting UI strings.</p>
+        <p>Read more <a href="/about">about me</a> or take a look at my <a href="/projects">recent projects.</a></p>
       </div>
     </section>
   );
