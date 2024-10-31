@@ -14,7 +14,7 @@ export default function Page() {
         <p>I'm proficient in creating the technical documentation in <strong>lightweight markup languages</strong> like Markdown and reStructuredText (reST), but I can also utilize <strong>DITA principles</strong> to build a solid information architecture.</p>
         <p>I can write the documentation in English (US or UK/NZ/AUS) or in German.</p>
         <p>Additional skills include designing technical diagrams, wireframing and prototyping in Figma, creating or maintaining a style guide, handling translation workflows, as well as writing the release notes and correcting UI strings.</p>
-        <p>Read more <a href="/about">about me</a> or take a look at my <a href="/projects">recent projects.</a></p>
+        <p>Read more <a href="/about">about me</a>, check out my <a href="/blog">blog</a>, or take a look at my <a href="/projects">recent projects.</a></p>
       </div>
     </section>
   );

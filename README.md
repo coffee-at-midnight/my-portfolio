@@ -1,10 +1,6 @@
-# Nextfolio
+# My portfolio
 
-A clean, fast, and lightweight portfolio template built with [Next.js](https://nextjs.org/), [Vercel](https://vercel.com/), and [Tailwind CSS](https://tailwindcss.com/) for optimal performance.
-
-Deploy your Nextfolio site with Vercel in minutes.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F1msirius%2FNextfolio)
+This is my technical writing portfolio and blog forked from the Nextfolio template for Next.js. Blog articles are written in Markdown/MDX and styled with Tailwind CSS.
 
 ## Technologies Used
 
@@ -52,11 +48,3 @@ The server will be running at [http://localhost:3000](http://localhost:3000).
 3. Update your blog posts in the `/content` folder.
 
 For more information about configuration, follow the instructions in the [Getting Started](https://nextfolio-template.vercel.app/blog/getting-started#configuration) post.
-
-## Contributing
-
-Contributions are welcome! To get involved, just push your code to the repo. Whether you're enhancing existing features or adding new ones, your efforts are greatly appreciated!
-
-## Licence
-
-Nextfolio is open-source and released under the MIT License.
