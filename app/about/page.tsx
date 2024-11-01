@@ -21,15 +21,21 @@ export default function About() {
           </div>
         </div>
         <div className="lg:ml-5 w-full md:w-2/3 prose prose-neutral dark:prose-invert ">
-        <li>I'm a technical writer in the robotics/automation industry.</li>
-        <li>Have a lot of experience with data science.</li>
-        <li>Currently working on planning and implementing a new documentation platform built with Markdown/MDX and a React-based SSG (Gatsby or Next.js).</li>
+        <li>I'm a technical writer in the robotics/automation industry. ✒️⚙️</li>
+        <li>I prefer writing in Markdown/MDX or DITA/XML. 🪄</li>
+        <li>I'm currently conceptualising a new documentation portal in Markdown/MDX and Next.js. 💾</li>
+        <li>Apparently I need to learn React to slay properly. 💻</li>
+        <li>Only semi-coherent before 8 AM, I don't like taking the train to Karlsruhe. ☕</li>
+        <li>I think it's high time to get rid of reST. 🌏</li>
         </div>
       </div>
 
       <h2 className="mt-10 mb-8 text-xl font-medium tracking-tight">My Bio</h2>
       <div className="prose prose-neutral dark:prose-invert">
-        <p>I got into technical writing after moving on from frontend web development.</p>
+        <p>I'm a technical writer in the robotics/automation industry with 3+ years of experience in creating software documentation.</p>
+        <p>My skills include writing the technical documentation in my main languages English and German, as well as managing translations, writing the release notes, writing API documentation, correcting UI strings and creating a style guide for the documentation.</p>
+        <p>I am well-versed in writing in lightweight markup languages like Markdown and reStructuredText (reST), but I can also apply DITA principles to structure the documentation and build a solid information architecture.</p>
+        <p>My most recent experience includes having ownership of the technical documentation in the corporation and conceptualising a new documentation portal.</p>
       </div>
 
       <h2 className="mt-10 mb-8 text-xl font-medium tracking-tight">My Skills</h2>
