@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Collapsible from '../components/collapsible';
+import { join } from "path";
+import { jobs } from "./jobs-data";
 
 export default function About() {
   return (
@@ -19,96 +21,108 @@ export default function About() {
           </div>
         </div>
         <div className="lg:ml-5 w-full md:w-2/3 prose prose-neutral dark:prose-invert ">
-        <p><strong>Hi all and welcome on my blog! ヾ(＠⌒ー⌒＠)ノ</strong></p>
         <li>I'm a technical writer in the robotics/automation industry.</li>
         <li>Have a lot of experience with data science.</li>
         <li>Currently working on planning and implementing a new documentation platform built with Markdown/MDX and a React-based SSG (Gatsby or Next.js).</li>
-        <li>Usually busy with writing things, coding things, waiting for trains, or drinking coffee.</li>
         </div>
       </div>
-    
+
       <h2 className="mt-10 mb-8 text-xl font-medium tracking-tight">My Bio</h2>
       <div className="prose prose-neutral dark:prose-invert">
+        <p>I got into technical writing after moving on from frontend web development.</p>
       </div>
 
       <h2 className="mt-10 mb-8 text-xl font-medium tracking-tight">My Skills</h2>
       <div className="prose prose-neutral dark:prose-invert">
-      <Collapsible title="✒️ Technical Writing">
+      <Collapsible title="Technical Writing">
       <ul>
-        <li>Writing the technical documentation in <strong>English (US or UK/AUS/NZ)</strong> and <strong>German</strong></li>
-        <li>Applying <strong>DITA principles</strong> to structure and modularize the technical documentation</li>
-        <li>Creating an <strong>information architecture</strong> for a software product/software module and developing the documentation of a <strong>completely new product/module</strong> by mapping all features and functionalities</li>
-        <li>Including predefined, reusable <strong>templates and layouts</strong> as well as <strong>FAQs and admonitions</strong> for modular content</li>
-        
-        <li>Designing <strong>technical diagrams</strong> for the documentation, Including <strong>annotated screenshots and screen captures</strong> of the product UI</li>
-        <li>Designing <strong>technical diagrams</strong> for the documentation and taking/annotating <strong>screenshots and screen captures of the UI</strong></li>
-        
+        <li>Experience with writing the technical documentation for software products, platforms or modules in <strong>English (US or UK/AUS/NZ)</strong> and <strong>German</strong></li>
+        <li>Experience with writing the <strong>release notes</strong> of a software product and following the software development life cycle/release cycle</li>
+        <li>Experience with writing <strong>API documentation</strong> and using Swagger to generate specifications according to OpenAPI standard in JSON/YAML format</li>
+        <li>Experience with writing <strong>process documentation</strong> and <strong>step-by-step user guides</strong></li>
+        <li>Experience with including <strong>FAQs, admonitions and templates</strong> in the documentation</li>
+        <li>Experience with writing <strong>technical blog articles, training guides, whitepapers, datasheets</strong> and other supporting materials</li>
+        <li>Ability to create or maintain a <strong>style guide</strong> for the technical documentation (Familiarity with the IBM Style Guide, Microsoft Writing Style Guide, Google Developer Documentation Style Guide)</li>
       </ul>
       </Collapsible>
       <hr className="mt-5 mb-5"/>
-      <Collapsible title="💾 Documentation">
-      <ul>
-        <li>Creating the technical documentation of a <strong>software product, platform or module</strong></li>
-        <li>Writing precise <strong>process documentation</strong> and <strong>step-by-step user guides</strong></li>
-         <li>Writing the <strong>API documentation</strong> and using Swagger to generate specifications according to OpenAPI standard in JSON/YAML format</li>
-        <li>Writing or maintaining the <strong>release notes</strong> of a software product</li>
-        <li>Writing or maintaining a <strong>style guide</strong> for the technical documentation (Familiarity with the IBM Style Guide, Microsoft Writing Style Guide, Google Developer Documentation Style Guide)</li>
-        <li>Implementing <strong>standards</strong> for the technical documentation like ISO 27001 and following <strong>QA measures/reviews</strong> during the technical writing process</li>
+      <Collapsible title="Concept Planning">
+      <ul>       
+         <li>Experience with planning, designing and implementing a <strong>new documentation portal</strong> in the corporation including writing a concept plan/project plan</li>
+         <li>Experience with having <strong>product ownership of the technical documentation</strong> and implementing the product strategy (documentation as part of the product)</li>
+         <li>Experience with creating an <strong>information architecture</strong> for a software product/software module and developing the documentation of a <strong>completely new product/module</strong> by mapping all features and functionalities</li>
+         <li>Ability to apply <strong>DITA principles</strong> to structure and modularize the technical documentation (structured/modular content)</li>
+         <li>Knowledge of <strong>industry standards</strong> for the technical documentation (ISO 27001) and how to implement them with <strong>QA measures/reviews</strong></li>       
       </ul>
       </Collapsible>
       <hr className="mt-5 mb-5"/>
-      <Collapsible title="⚙️ Toolsuite">
+      <Collapsible title="Toolsuite">
       <ul>
-        <li>Creating the technical documentation with a <strong>lightweight markup language (Markdown, reStructuredText (reST))</strong> and a <strong>static site generator (Jekyll, MkDocs, Sphinx, Astro, Gatsby, Next.js)</strong></li>
-        <li>Working in a development environment for technical writing including <strong>code editor/IDE (VS Code), version control system (Git & GitHub/GitLab), CI/CD pipelines, and deployment process</strong></li>
-        <li>Familiarity with <strong>Confluence</strong> as a knowledge management base for internal documentation and <strong>WordPress</strong> as a CMS for blogging</li>    
+        <li>Experience with using a <strong>lightweight markup language (Markdown, reStructuredText (reST))</strong> and a <strong>static site generator (Jekyll, MkDocs, Sphinx, Astro, Gatsby, Next.js)</strong> to create the technical documentation</li>
+        <li>Experience with working in a development environment for technical writing including <strong>code editor/IDE (VS Code), version control system (Git & GitHub/GitLab), CI/CD pipelines, and deployment process</strong></li>
+        <li>Experience with using a <strong>knowledge base management system (Confluence)</strong> for internal and external documentation</li>
+        <li>Experience with using a <strong>CMS (WordPress)</strong> or <strong>Headless CMS (Netlify)</strong></li>
       </ul>
       </Collapsible>
       <hr className="mt-5 mb-5"/>
-      <Collapsible title="🌏 Translation">
+      <Collapsible title="Translation">
       <ul>
-        <li>Implementing <strong>internationalization(i18n)/localization(i10n)</strong> best practices</li>
-        <li>Using a <strong>TMS (Translation Management System) (memoQ, Weblate)</strong> to maintain the translation of the technical documentation into multiple other languages</li>
-        <li>Working with <strong>AI tools (DeepL)</strong> for MTPE (Machine Translation Post-Editing) and using a <strong>translation pipeline with .po/.pot files</strong></li>
-        <li>Correcting and translating <strong>UI strings</strong> in the product and the documentation</li>
-        <li>Maintaining a <strong>glossary/terminology database</strong> for the documentation</li>
+        <li>Experience with <strong>translating the technical documentation</strong> as well as <strong>UI strings</strong> into English or German</li>
+        <li>Experience with using a <strong>TMS (Translation Management System) (memoQ, Weblate)</strong> that is integrated with <strong>AI tools (DeepL) for an MTPE (Machine Translation Post-Editing) approach</strong> to the translation process</li>
+        <li>Ability to work with <strong>.po/.pot files</strong> for the translation</li>
+        <li>Ability to implement <strong>internationalization(i18n)/localization(i10n)</strong> best practices</li>
+        <li>Ability to build a <strong>glossary/terminology database</strong> for the documentation</li>
       </ul>
       </Collapsible>
       <hr className="mt-5 mb-5"/>
-      <Collapsible title="📍 Design">
+      <Collapsible title="Design">
       <ul>
-      <li>Creating <strong>wireframes, mockups, and prototypes</strong> with <strong>Figma</strong></li> 
+      <li>Background in <strong>graphic design</strong> with the ability to design <strong>icons, vectors and other small graphics</strong> for the documentation</li>
+      <li>Skill in designing <strong>technical diagrams</strong> and <strong>flow charts</strong> for the documentation</li>
+      <li>Ability to take and annotate <strong>screenshots and screen captures/videos</strong> of the product UI and include them in the documentation</li>
+      <li>Ability to create <strong>wireframes, mockups and prototypes</strong> with <strong>Figma</strong></li>     
+      <li>Ability to implement web design principles in the documentation like <strong>SEO, accessibility and responsive design</strong></li>
+      <li>Knowledge in frontend web technologies like <strong>HTML, CSS, JavaScript, SASS/SCSS, Tailwind CSS, Node.js/npm and React</strong> with the ability to create the presentational layer of the documentation as well (complementing SSGs)</li>
       </ul>
       </Collapsible>
       <hr className="mt-5 mb-5"/>
       
-      <Collapsible title="💬 Workflow">
-      <ul> 
-        <li>Following a <strong>technical writing process</strong> including <strong>reviews/edits</strong> with senior technical writers or development</li>       
-        <li>Using <strong>boards (Jira, Trello)</strong> for task management/distribution</li>
-        <li>Working in a <strong>Scrum team/process</strong> as a technical writer</li>
-        <li>Communicating with <strong>different departments and stakeholders</strong> to gather requirements for the technical documentation</li>
-        <li>Working in a <strong>remote-first, asynchronous, international team</strong> and managing timezone differences between Europe and AUS/NZ</li>
+      <Collapsible title="Workflow">
+      <ul>
+        <li>Experience with following a <strong>technical writing process</strong> icluding <strong>reviews/edits</strong> with senior technical writers or development</li>
+        <li>Experience with working in a <strong>Scrum team/process</strong> as a technical writer</li>
+        <li>Ability to use <strong>boards (Jira, Trello)</strong> for task management/distribution</li>
+        <li>Experience with working in an <strong>international, cross-functional team</strong></li>
+        <li>Experience with communicating with <strong>different departments and stakeholders</strong></li>
       </ul>
       </Collapsible>
       <hr className="mt-5 mb-5"/>
       <Collapsible title="Additional">
       <ul>
-        
-      <li>Having <strong>product ownership</strong> of the technical documentation, Working in product management and implementing the product strategy in the documentation</li>
-        <li>Planning, designing and implementing a <strong>new documentation portal</strong></li>
-       
-        <li>Implementing web design principles in the technical documentation like <strong>SEO</strong>, <strong>accessibility</strong> and <strong>responsive design</strong></li>
-        <li>Frontend web technologies like <strong>HTML, CSS, SCSS/SASS, TailwindCSS, JavaScript, Node.js/npm, React/Next.js</strong></li>
         <li>Familiarity with several <strong>programming languages (C/C++, Java, Python)</strong></li>
+        <li>Ability to use the <strong>Terminal/CLI</strong> in Windows and Linux (Bash)</li>
       </ul>
       </Collapsible>
+      <hr className="mt-5 mb-5"/>
       </div>
 
       <h2 className="mt-10 mb-8 text-xl font-medium tracking-tight">My Work Experience</h2>
-
-      <h3 className="mt-10 mb-8 text-lg font-medium tracking-tight">Technical Writer (AUVESY-MDT) - June 2024</h3>
-      <h3 className="mt-10 mb-8 text-lg font-medium tracking-tight">Technical Writer (Freelance/Contract) - July 2022 to June 2024</h3>
+      <div className="space-y-6">
+        {jobs.map((job, index) => (
+          <div key={index} className="block group flex flex-col">
+              <div className="text-lg mb-2">{job.title} ({job.industry})</div>
+              <div className="w-full flex justify-between items-baseline">
+                <span className="text-black dark:text-white font-medium tracking-tight">
+                  {job.company}, {job.location}
+                  </span>
+                <span className="text-neutral-600 dark:text-neutral-400 tabular-nums text-sm">
+                  {job.duration}
+                </span>
+              </div>
+              <p className="prose prose-neutral dark:prose-invert pt-3">{job.description}</p>
+          </div>
+        ))}
+      </div>
     </section>
   );
 }
