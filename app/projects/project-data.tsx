@@ -1,30 +1,26 @@
 export interface Project {
   title: string;
-  year: number;
+  year: string;
+  tech_stack: string;
   description: string;
-  url: string;
+  url: Array <string>;
 }
 
 export const projects: Project[] = [
   {
-    title: "Project One",
-    year: 2023,
+    title: "My technical writing portfolio and blog",
+    year: "2024",
+    tech_stack: "Markdown/MDX, React/Next.js, Tailwind CSS, GitHub, Vercel",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis dolorem rem praesentium dicta labore, at laudantium quisquam.",
-    url: "https://example.com/",
+      "I created this portfolio and blog with Markdown/MDX and Next.js.",
+    url: ["https://example.com/", "https://"],
   },
   {
-    title: "Project Two",
-    year: 2022,
+    title: "User guides for a data science platform",
+    year: "2023/2024",
+    tech_stack: "reStructuredText (reST), Sphinx, GCP",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis dolorem rem praesentium dicta labore, at laudantium quisquam.",
-    url: "https://example.com/",
-  },
-  {
-    title: "Project Three",
-    year: 2021,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis dolorem rem praesentium dicta labore, at laudantium quisquam.",
-    url: "https://example.com/",
-  },
+    url: ["https://example.com/"],
+  }
 ];

@@ -25,7 +25,7 @@ export default function About() {
         <li>I prefer writing in Markdown/MDX or DITA/XML. 🪄</li>
         <li>I'm currently conceptualising a new documentation portal in Markdown/MDX and Next.js. 💾</li>
         <li>Apparently I need to learn React to slay properly. 💻</li>
-        <li>Only semi-coherent before 8 AM, I don't like taking the train to Karlsruhe. ☕</li>
+        <li>Only semi-coherent after 8 AM, I don't like taking the train to Karlsruhe. ☕</li>
         <li>I think it's high time to get rid of reST. 🌏</li>
         </div>
       </div>
