@@ -72,7 +72,7 @@ export default function Blog({ params }) {
       <article className="prose prose-quoteless prose-neutral dark:prose-invert">
         <CustomMDX source={post.content} />
       </article>
-      <hr className="mb-5"/>
+      <hr className="mb-5 mt-5"/>
       <div>
       {prevSlug && (<a href={`/blog/${prevSlug}`} className="inline-block mb-5 rounded-lg border-2 border-black px-4 py-2 text-neutral-600 dark:text-neutral-400 dark:border-white hover:bg-gray-100 transition duration-300">Prev</a>)}
       {nextSlug && (<a href={`/blog/${nextSlug}`} className="inline-block mb-5 rounded-lg border-2 border-black px-4 py-2 text-neutral-600 dark:text-neutral-400 dark:border-white hover:bg-gray-100 transition duration-300 float-right">Next</a>)}
