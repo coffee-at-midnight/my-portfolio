@@ -60,7 +60,7 @@ export default function Blog({ params }) {
     <section>
       <script type="application/ld+json" suppressHydrationWarning dangerouslySetInnerHTML={{__html: JSON.stringify({"@context": "https://schema.org", "@type": "BlogPosting", headline: post.metadata.title, datePublished: post.metadata.publishedAt, dateModified: post.metadata.publishedAt, description: post.metadata.summary, image: post.metadata.image ? `${metaData.baseUrl}${post.metadata.image}`: `/og?title=${encodeURIComponent(post.metadata.title)}`, url: `${metaData.baseUrl}/blog/${post.slug}`, author: {"@type": "Person", name: metaData.name,},}),}}/>
       <a href="/blog" className="inline-block mb-5 rounded-lg border-2 border-black px-4 py-2 text-neutral-600 dark:text-neutral-400 dark:border-white hover:bg-gray-100 transition duration-300">Back</a>
-      <h1 className="title mb-3 font-medium text-2xl tracking-tight">
+      <h1 className="title mb-3 font-bold text-3xl tracking-tight">
         {post.metadata.title}
       </h1>
       <div className="flex justify-between items-center mt-2 mb-8 text-medium">
