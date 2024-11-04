@@ -10,6 +10,13 @@ import { ImageGrid } from "./image-grid";
 import rehypeKatex from "rehype-katex";
 import remarkMath from "remark-math";
 import "katex/dist/katex.min.css";
+import TableOfContents from '../components/toc';
+
+interface Heading {
+  depth: number;
+  text: string;
+  slug: string;
+}
 
 function CustomLink(props) {
   let href = props.href;
@@ -69,6 +76,7 @@ function Callout(props) {
   );
 }
 
+// Function to generate slug out of given string/text
 function slugify(str) {
   return str
     .toString()
@@ -80,6 +88,7 @@ function slugify(str) {
     .replace(/\-\-+/g, "-");
 }
 
+// Function to create heading elements in React
 function createHeading(level) {
   const Heading = ({ children }) => {
     let slug = slugify(children);
@@ -100,6 +109,22 @@ function createHeading(level) {
   return Heading;
 }
 
+// Function to return array of headings on page for ToC
+function getHeadings(content){
+  const headingRegex = /^(#{1,6})\s+(.*)$/gm;
+  const headings: Heading[] = [];
+  let match;
+
+  while ((match = headingRegex.exec(content)) !== null) {
+    const depth = match[1].length; // Number of '#' characters
+    const text = match[2]; // Heading text
+    const slug = slugify(text);
+    headings.push({ depth, text, slug } as Heading);
+  }
+  return headings;
+}
+
+// JS object to specify how MDX components are rendered
 let components = {
   h1: createHeading(1),
   h2: createHeading(2),
@@ -119,11 +144,22 @@ let components = {
   Callout,
 };
 
+// Component that allows to render MDX content with custom components and specific plugins
+// Custom components can override default rendering of MDX components like h1, p, ...
 export function CustomMDX(props) {
+  const { content, ...restProps } = props;
+  const headings = getHeadings(content);
   return (
+    <>
+    <hr className="mb-5"/>
+    <TableOfContents headings={headings}/>
+    <hr className="mt-5 mb-5"/>
     <MDXRemote
+      // All props passed to CustomMDX will also be passed to MDXRemote
       {...props}
+      // Merge all components from components object (Custom MDX) and props.components object (Default MDX)
       components={{ ...components, ...(props.components || {}) }}
+      // Configure MDX rendering with additional plugins for mathematical notation
       options={{
         mdxOptions: {
           remarkPlugins: [remarkMath],
@@ -131,5 +167,6 @@ export function CustomMDX(props) {
         },
       }}
     />
+    </>
   );
 }

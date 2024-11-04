@@ -50,7 +50,7 @@ export function getNextSlug(slug) {
 // React component to display blog based on given slug parameter
 export default function Blog({ params }) {
   let post = getBlogPosts().find((post) => post.slug === params.slug);
-  // Involke notFound function if post/slug doesn't exist
+  // Invoke notFound function if post/slug doesn't exist
   if (!post) {
     notFound();
   }
@@ -69,8 +69,8 @@ export default function Blog({ params }) {
         </p>
         <p className="text-sm text-neutral-600 dark:text-neutral-400"> Written by {metaData.name}</p>
       </div>
-      <article className="prose prose-quoteless prose-neutral dark:prose-invert">
-        <CustomMDX source={post.content} />
+      <article className="prose prose-quoteless prose-neutral dark:prose-invert mt-10">
+        <CustomMDX source={post.content} content={post.content}/>
       </article>
       <hr className="mb-5 mt-5"/>
       <div>
