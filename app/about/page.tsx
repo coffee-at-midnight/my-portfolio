@@ -23,7 +23,7 @@ export default function About() {
         <div className="lg:ml-5 w-full md:w-2/3 prose prose-neutral dark:prose-invert ">
         <li>I'm a technical writer in the robotics/automation industry. ✒️⚙️</li>
         <li>I prefer writing in Markdown/MDX or DITA/XML. 🪄</li>
-        <li>I'm currently conceptualising a new documentation portal in Markdown/MDX and Next.js. 💾</li>
+        <li>I'm currently conceptualizing a new documentation portal in Markdown/MDX and Next.js. 💾</li>
         <li>Apparently I need to learn React to slay properly. 💻</li>
         <li>Only semi-coherent after 8 AM, I don't like taking the train to Karlsruhe. ☕</li>
         <li>I think it's high time to get rid of reST. 🌏</li>
@@ -35,7 +35,7 @@ export default function About() {
         <p>I'm a technical writer in the robotics/automation industry with 3+ years of experience in creating software documentation.</p>
         <p>My skills include writing the technical documentation in my main languages English and German, as well as managing translations, writing the release notes, writing API documentation, correcting UI strings and creating a style guide for the documentation.</p>
         <p>I am well-versed in writing in lightweight markup languages like Markdown and reStructuredText (reST), but I can also apply DITA principles to structure the documentation and build a solid information architecture.</p>
-        <p>My most recent experience includes having ownership of the technical documentation in the corporation and conceptualising a new documentation portal.</p>
+        <p>My most recent experience includes having ownership of the technical documentation in the corporation and conceptualizing a new documentation portal.</p>
       </div>
 
       <h2 className="mt-10 mb-8 text-xl font-medium tracking-tight">My Skills</h2>
@@ -47,7 +47,7 @@ export default function About() {
         <li>Experience with writing <strong>API documentation</strong> and using Swagger to generate specifications according to OpenAPI standard in JSON/YAML format</li>
         <li>Experience with writing <strong>process documentation</strong> and <strong>step-by-step user guides</strong></li>
         <li>Experience with including <strong>FAQs, admonitions and templates</strong> in the documentation</li>
-        <li>Experience with writing <strong>technical blog articles, training guides, whitepapers, datasheets</strong> and other supporting materials</li>
+        <li>Experience with writing <strong>technical blog articles, training guides, whitepapers, data sheets</strong> and other supporting materials</li>
         <li>Ability to create or maintain a <strong>style guide</strong> for the technical documentation (Familiarity with the IBM Style Guide, Microsoft Writing Style Guide, Google Developer Documentation Style Guide)</li>
       </ul>
       </Collapsible>
@@ -62,7 +62,7 @@ export default function About() {
       </ul>
       </Collapsible>
       <hr className="mt-5 mb-5"/>
-      <Collapsible title="Toolsuite">
+      <Collapsible title="Tool suite">
       <ul>
         <li>Experience with using a <strong>lightweight markup language (Markdown, reStructuredText (reST))</strong> and a <strong>static site generator (Jekyll, MkDocs, Sphinx, Astro, Gatsby, Next.js)</strong> to create the technical documentation</li>
         <li>Experience with working in a development environment for technical writing including <strong>code editor/IDE (VS Code), version control system (Git & GitHub/GitLab), CI/CD pipelines, and deployment process</strong></li>
@@ -95,7 +95,7 @@ export default function About() {
       
       <Collapsible title="Workflow">
       <ul>
-        <li>Experience with following a <strong>technical writing process</strong> icluding <strong>reviews/edits</strong> with senior technical writers or development</li>
+        <li>Experience with following a <strong>technical writing process</strong> including <strong>reviews/edits</strong> with senior technical writers or development</li>
         <li>Experience with working in a <strong>Scrum team/process</strong> as a technical writer</li>
         <li>Ability to use <strong>boards (Jira, Trello)</strong> for task management/distribution</li>
         <li>Experience with working in an <strong>international, cross-functional team</strong></li>
