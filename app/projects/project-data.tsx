@@ -3,7 +3,7 @@ export interface Project {
   year: string;
   tech_stack: string;
   description: string;
-  url: Array <string>;
+  url: string;
 }
 
 export const projects: Project[] = [
@@ -12,8 +12,8 @@ export const projects: Project[] = [
     year: "2024",
     tech_stack: "Markdown/MDX, React/Next.js, Tailwind CSS, GitHub, Vercel",
     description:
-      "I created this portfolio and blog with Markdown/MDX and Next.js.",
-    url: ["https://example.com/", "https://"],
+      "My technical writing portfolio and blog, written in Markdown/MDX, built with React/Next.js, styled with Tailwind CSS and deployed with GitHub/Vercel.",
+    url: "https://technical-writers-blog.vercel.app/",
   },
   {
     title: "User guides for a data science platform",
@@ -21,6 +21,6 @@ export const projects: Project[] = [
     tech_stack: "reStructuredText (reST), Sphinx, GCP",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis dolorem rem praesentium dicta labore, at laudantium quisquam.",
-    url: ["https://example.com/"],
+    url: "https://example.com/",
   }
 ];

@@ -15,7 +15,9 @@ export default function Projects() {
       <div className="space-y-6">
         {projects.map((project, index) => (
           <div key={index} className="block group flex flex-col">
-            <div className="text-lg mb-2">{project.title}</div>
+            <div className="text-lg mb-2">
+              <a href={project.url} target="_blank">{project.title}</a>
+              </div>
               <div className="w-full flex justify-between items-baseline">
                 <span className="text-black dark:text-white font-medium tracking-tight">
                   {project.tech_stack}
@@ -25,11 +27,6 @@ export default function Projects() {
                 </span>
               </div>
               <p className="prose prose-neutral dark:prose-invert pt-3 pb-1">{project.description}</p>
-              {project.url.map((url, index) => (
-                <p className="prose prose-neutral dark:prose-invert text-sm">{url}</p>
-              )
-
-              )}
           </div>
         ))}
       </div>

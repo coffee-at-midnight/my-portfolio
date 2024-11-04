@@ -32,6 +32,14 @@ function (props){
 <Image src="/public/image.png" alt="" width="500px" height="200px"/>
 ```
 
+```javascript
+function Image(props) {
+  return <img src={props.src} alt={props.alt}
+      width={props.width} height={props.height}
+      className="rounded shadow-lg"/>;
+}
+```
+
 ## Image captions
 
 ## Admonitions
