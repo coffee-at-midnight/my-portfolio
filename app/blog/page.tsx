@@ -11,7 +11,7 @@ export default function BlogPosts() {
   return (
     <section>
       <h1 className="mb-8 text-2xl font-medium tracking-tight">My Blog</h1>
-      <p className="mb-6">Read here my latest rants from the realms of technical writing.</p>
+      <p className="mb-6">The chronicles of a tired technical writer.</p>
       <hr className="mb-8"/>
       <div>
         {allBlogs.sort((a, b) => {if (new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)) {return -1;} return 1;}).map((post) => (

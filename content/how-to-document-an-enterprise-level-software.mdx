@@ -7,10 +7,10 @@ tags: "Technical Writing"
 
 Want to document an enterprise-level software?
 
-It's not that difficult if you manage to actually design a documentation system that's remotely functioning.
+Don't worry your favourite technical writer has all the right advice for you!
 
-![GIF](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2Zjd2d5a2p1b3Z5eTRrbzk5ODNuOHcyc2s5czM3aml1dDR3NG03ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JsbWHnk5dtVogx0IhE/giphy.gif)
-<Caption>I am the IRL incarnation of Markdown.</Caption>
+![GIF](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTI1NjhwYWV4cXVhYmpiYXoxb3QyY3N1ZW1vOGkwM2t1a2lta3Z5NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KyGiMJokZEQvu/giphy.gif)
+<Caption>Look, C-Suite is taking notes!</Caption>
 
 ## Allocating resources for the documentation
 
@@ -24,9 +24,11 @@ Now you must make a rough calculation of how much documentation we're going to d
 
 If we're talking enterprise-level this usually means you aren't having a singular app or product, but an entire product suite. In addition, you might have translations into multiple other languages, supporting materials for the documentation like training guides and videos, and documentation for legacy products which are being phased out.
 
-All in all you usually have a lot of content to deal with. For this you need to set up a system that allows you to organize the documentation in a structured way, as well as allows users to navigate it intuitively and swiftly find the information they're looking for.
+All in all you have a lot of content to deal with.
 
-Additionally you might have more requirements for the documentation system ranging from a search function to a sidebar navigation and some kind of deployment process in the backend. All these requirements should be saved in a requirements document.
+For this you need to set up a system that allows you to organise the documentation in a structured way, as well as allows users to navigate it intuitively and swiftly find the information they're looking for.
+
+Additionally, you might have more requirements for the documentation system ranging from a search function to a sidebar navigation and some kind of deployment process in the backend. All these requirements should be saved in a requirements document.
 
 ### Resources which are available
 
@@ -66,27 +68,39 @@ The second most common reason is simply because the corporation (or the engineer
 
 It's unsustainable to expect a singular technical writer to support the entire documentation of the product suite as much as it is unsustainable to expect a singular engineer to support the entire product.
 
-If you don't want to waste resources on a commercial solution for a tool suite you need to go for open source like Markdown or reStructuredText, introducing more manual effort (and in-house engineering support) to maintain the documentation backend.
+If you don't want to waste resources on a commercial solution for a tool suite, you need to go for open source like Markdown or reStructuredText, introducing more manual effort (and in-house engineering support) to maintain the documentation backend.
 
-Now, if you don't want to waste engineering resources on the development environment of such a backend, you can be almost assured that the project will see little progress. This, in combination with a lack of skilled technical writers to manage the content, leads to corporations having no control over their documentation.
+Now, if you don't want to waste engineering resources on the development environment of such a backend, you can be almost assured that the project will see little progress.
+
+This, in combination with a lack of skilled technical writers to manage the content, leads to corporations having no control over their documentation.
 
 ## Tool suite considerations: Commercial products vs. Open source
 
-By now I am convinced that considerations about the concrete tool suite to create an enterprise-level documentation are of secondary nature if you haven't figured out the resource allocation issue.
+By now I am convinced that considerations about the tool suite are of secondary nature if you haven't figured out the resource allocation issue.
 
 Ultimately Markdown and reStructuredText and XML are only formats for the content.
 
-Sure, each of them have their own advantages and drawbacks, but they aren't going to help you if you don't know how to structure and create and deploy the documentation in the first place.
+Sure, each of them have their own advantages and drawbacks and you should make choices in line with the specific requirements of your documentation project. But none of them are going to magically improve the quality of your documentation if you have no clue about technical writing in the first place.
 
-Commercial tools are more expensive and bind you to a given license and ecosystem, making integrations and migrations harder. On the other hand they often offer professional support, active maintenance and a more robust solution to set up a stable documentation environment.
+DITA/XML is industry standard for a reason because it provides technical writers with a concrete information architecture to organise the content and a complementing format to convert this architecture into a highly structured documentation.
 
-Open source tools are free to use and usually easier to integrate, but they also often have less support, increase manual effort on the development side, and can lead to an unstable documentation environment that isn't suitable to deploy an enterprise-level document
+Still, the challenge with DITA/XML lies with integrating it with a modern web-based frontend and tools for automated translation. Here, an open source solution like Markdown offers more flexibility.
 
+On the other side, relying on open source tools can introduce a certain amount of instability in your development environment and in any case requires more manual effort for set-up and maintenance.
 
+Here, you need to consider whether it's a good idea to deploy an enterprise-level documentation out of an unstable documentation backend.
 
+And whether the refusal to opt for any kind of commercial solution (due to afromentioned resource allocation issue) might not actually increase costs and hassle for everybody involved.
 
-DITA/XML is industry standard for a reason as it gives you a concrete information architecture to create structured, reusable content. The challenge here undoubtedly lies with integrating it with a modern, web-based frontend.
+## To summarize things
 
-Markdown is pretty much unstructured content, so you have to put in more manual effort to set up a structured system to support the documentation. On the other side, it's easi
+So, here's what you need to document an enterprise-level software:
 
+- First of all, you need the content for the documentation in a structured format, organised according to some kind of information architecture (content layer).
+- Then, you need the frontend architecture of the documentation portal (presentational layer).
+- And, in accordance with that you need the backend for the deployment process of the documentation and the management of the content repository and its translations (documentation system).
 
+And if such a system is well-designed from the very beginning the actual process of creating and deploying the documentation should be a breeze as well.
+
+![GIF](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2pxMDh3azRmMnM1NWdiYnBsYzA2eDBjamd4cDMyY215d2c4cXZsMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wQk0woYwaQyuQ/giphy.gif)
+<Caption>Time to technical write like a pro.</Caption>
