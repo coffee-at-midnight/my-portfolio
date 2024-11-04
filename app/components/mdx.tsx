@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { highlight } from "sugar-high";
 import { TweetComponent } from "./tweet";
@@ -33,8 +32,9 @@ function CustomLink(props) {
   return <a target="_blank" rel="noopener noreferrer" {...props} />;
 }
 
-function RoundedImage(props) {
-  return <Image alt={props.alt} className="rounded-lg" {...props} />;
+function Image(props) {
+  return <img src={props.src} alt={props.alt}  width={props.width} height={props.height}
+  className="rounded shadow-lg"/>;
 }
 
 function Code({ children, ...props }) {
@@ -132,7 +132,7 @@ let components = {
   h4: createHeading(4),
   h5: createHeading(5),
   h6: createHeading(6),
-  Image: RoundedImage,
+  Image,
   ImageGrid,
   a: CustomLink,
   StaticTweet: TweetComponent,
