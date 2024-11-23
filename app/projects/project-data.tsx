@@ -8,19 +8,19 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "My technical writing portfolio and blog",
+    title: "Technical writing portfolio and blog",
     year: "2024",
     tech_stack: "Markdown/MDX, React/Next.js, Tailwind CSS, GitHub, Vercel",
     description:
-      "My technical writing portfolio and blog, written in Markdown/MDX, built with React/Next.js, styled with Tailwind CSS and deployed with GitHub/Vercel.",
+      "I created a technical writing portfolio and blog for my efforts with React/Next.js, Markdown/MDX and Tailwind CSS, and deployed it with GitHub/Vercel.",
     url: "https://technical-writers-blog.vercel.app/",
   },
   {
-    title: "User guides for a data science platform",
+    title: "User guides/Tutorials for the AgileData platform",
     year: "2023/2024",
     tech_stack: "reStructuredText (reST), Sphinx, GCP",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis dolorem rem praesentium dicta labore, at laudantium quisquam.",
-    url: "https://example.com/",
+      "I wrote 20+ user guides/tutorials for a data science SaaS platform in reStructuredText (reST)/Sphinx, which have been deployed with GCP (Google Cloud Platform). My work included taking and annotating screenshots of the product UI and creating data visualizations with Looker Studio.",
+    url: "",
   }
 ];

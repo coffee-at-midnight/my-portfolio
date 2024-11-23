@@ -18,8 +18,8 @@ export const navItems = {
 // Social link for social media navigation
 export const socialLinks = {
   twitter: "#",
-  github: "#",
+  github: "https://github.com/coffee-at-midnight",
   instagram: "#",
-  linkedin: "#",
+  linkedin: "https://www.linkedin.com/in/jana-barth-3461a2337/",
   email: "#",
 };
